@@ -1,0 +1,33 @@
+import torch
+
+MODEL_PATH = "weight/best.pt"
+INPUT_PATH = "videos"
+OUTPUT_ROOT = "test_results"
+
+BALL_CLASS_ID = 0
+DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
+
+IMGSZ = 1280
+CONF = 0.18
+IOU = 0.45
+
+ROI_TOP = 0.20
+ROI_BOTTOM = 0.70
+ROI_LEFT = 0.05
+ROI_RIGHT = 0.95
+
+BASE_GATE_PX = 70.0
+MAX_GATE_PX = 260.0
+GATE_EXPAND_PER_MISS = 16.0
+MAX_MISSED = 12
+RECOVER_AFTER = 4
+ACCEPT_SCORE = 0.10
+
+VELOCITY_HIST_LEN = 8
+MEASURE_HIST_LEN = 12
+TRAIL_LEN = 60
+DRAW_PREDICTED_TRAIL = False
+
+DRAW_ROI = True
+DRAW_PRED_POINT = True
+DRAW_DEBUG_TEXT = True

@@ -1,0 +1,15 @@
+,value
+total_images,551.0
+gt_visible,394.0
+pred_visible,386.0
+true_positives,311.0
+false_positives,29.0
+false_negatives,37.0
+detection_rate,0.9797
+precision,0.9249
+recall,0.9061
+f1_score,0.9154
+mean_centroid_error_px,25.16
+median_centroid_error_px,1.18
+max_centroid_error_px,586.53
+pixel_threshold,25.0
